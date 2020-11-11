@@ -1,0 +1,1 @@
+pyuic5 uis2.ui -o uis2.py

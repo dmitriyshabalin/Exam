@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>544</width>
+    <height>310</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>531</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(76,76,81);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>321</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTableWidget {	
+background-color: white;
+border:none;
+selection-background-color:#b3b7c4;}
+
+QHeaderView:section{
+font:8pt &quot;Trebuchet MS&quot;;
+color:rgb(39,39,45);
+border: none;
+
+}
+QHeaderView{
+background-color: white;
+}
+</string>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>80</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>42</number>
+     </attribute>
+     <row>
+      <property name="text">
+       <string>строка 1</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>строка 2</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>строка 3</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>столбец 1</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>столбец 2</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>столбец 3</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>30</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{color:white;
+	color: #dfdac2;
+background-color: rgb(27, 29, 35);
+border:none;
+border-radius:8px;
+
+}
+QPushButton:hover {
+	border: 2px solid rgb(64, 71, 88);
+background-color:#5a606b;}
+QPushButton:focus {
+	border: 2px solid rgb(91, 101, 124);
+}</string>
+     </property>
+     <property name="text">
+      <string>Занести данные</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>60</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{	color: #dfdac2;
+background-color: rgb(27, 29, 35);
+border:none;
+border-radius:8px;
+
+}
+QPushButton:hover {
+	border: 2px solid rgb(64, 71, 88);
+background-color:#5a606b;}
+QPushButton:focus {
+	border: 2px solid rgb(91, 101, 124);
+}</string>
+     </property>
+     <property name="text">
+      <string>Считать данные</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>90</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{	color: #dfdac2;
+background-color: rgb(27, 29, 35);
+border:none;
+border-radius:8px;
+
+}
+QPushButton:hover {
+	border: 2px solid rgb(64, 71, 88);
+background-color:#5a606b;}
+QPushButton:focus {
+	border: 2px solid rgb(91, 101, 124);
+}</string>
+     </property>
+     <property name="text">
+      <string>Очистить таблицу</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>200</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: #dfdac2;
+</string>
+     </property>
+     <property name="text">
+      <string>Здесь будут отображаться данные :)</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>200</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+  color : white;
+	background-color: rgb(27, 29, 35);
+	border-radius: 5px;
+	border: 2px solid rgb(27, 29, 35);
+	padding-left: 10px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(64, 71, 88);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(91, 101, 124);
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>170</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: #dfdac2;</string>
+     </property>
+     <property name="text">
+      <string>Впишите данные</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>120</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{	color: #dfdac2;
+background-color: rgb(27, 29, 35);
+border:none;
+border-radius:8px;
+
+}
+QPushButton:hover {
+	border: 2px solid rgb(64, 71, 88);
+background-color:#5a606b;}
+QPushButton:focus {
+	border: 2px solid rgb(91, 101, 124);
+}</string>
+     </property>
+     <property name="text">
+      <string>Добавить строку</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>544</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
