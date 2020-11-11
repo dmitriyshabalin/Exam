@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<link rel="shortcut icon" href="/images/icons/favicons/fav_logo.ico?6" /><script type="text/javascript" src="/js/loader_nav12198104_0.js"></script>
+
+<script type="text/javascript">
+(function() {
+var alertCont;
+function trackOldBrowserEvent(event) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', '/badbrowser_stat.php?act=track&event=' + event);
+  xhr.send();
+}
+function exposeGlobals() {
+  window.hideOldBrowser = function() {
+    alertCont.remove();
+    var date = new Date();
+    date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
+    var expiresDate = date.toGMTString();
+    var domain = window.locDomain;
+    document.cookie = 'remixoldbshown=1; expires=' + expiresDate + '; path=/' + (domain ? '; domain=.' + domain : '') + ';secure';
+    trackOldBrowserEvent('hideAlert');
+  }
+}
+function checkOldBrowser() {
+  if(!document.body) {
+    setTimeout(checkOldBrowser, 100);
+    return;
+  }
+  try {
+    if (!('CSS' in window && CSS.supports('display', 'flex')) || typeof Symbol === 'undefined') {
+      exposeGlobals();
+      var alert = '<div class="OldBrowser__container" style="width:960px;">  Установите <a href="/badbrowser.php?source=old_browser_alert" target="_blank">один из этих браузеров</a>, чтобы работа ВКонтакте была быстрой и стабильной.  <span class="OldBrowser__close" onclick="hideOldBrowser();"></span></div>';
+      alertCont = document.createElement('div');
+      alertCont.className = 'OldBrowser';
+      alertCont.id = 'old_browser_wrap';
+      alertCont.innerHTML = alert;
+      document.body.appendChild(alertCont);
+      trackOldBrowserEvent('showAlert');
+    }
+  } catch(e) {}
+}
+checkOldBrowser();
+})();
+var vk = {
+  ads_rotate_interval: 120000,
+  al: parseInt('3') || 4,
+  id: undefined,
+  intnat: '' ? true : false,
+  host: 'vk.com',
+  loginDomain: 'https://login.vk.com/',
+  lang: 0,
+  loaderNavSection: '',
+  rtl: parseInt('') || 0,
+  version: 12198104,
+  stDomains: 0,
+  stDomain: '',
+  stExcludedMasks: ["loader_nav","lang"],
+  zero: false,
+  contlen: 0,
+  loginscheme: 'https',
+  ip_h: '5fa1d78eae4756403a',
+  navPrefix: '/',
+  dt: parseInt('0') || 0,
+  fs: parseInt('11') || 13,
+  ts: 1577442631,
+  tz: 10800,
+  pd: 0,
+  css_dir: '',
+  vcost: 7,
+  time: [2019, 12, 27, 13, 30, 31],
+  sampleUser: -1, spentLastSendTS: new Date().getTime(),
+  a11y: 0,
+  statusExportHash: '',
+  audioAdsConfig: {"_":"_"},
+  longViewTestGroup: null,
+  cma: 1,
+  lpConfig: {
+    enabled: 0,
+    key: '',
+    ts: 0,
+    url: '',
+    lpstat: 0
+  },
+
+  pr_tpl: "<div class=\"pr %cls%\" id=\"%id%\"><div class=\"pr_bt\"><\/div><div class=\"pr_bt\"><\/div><div class=\"pr_bt\"><\/div><\/div>",
+
+  audioInlinePlayerTpl: "",
+
+  tnsPixelType: '',
+  tnsPixelSocdem: '23',
+
+  pe: {"search_attempt_stats":1,"search_position_stats":1,"article_poll":1,"vk_apps_svg_qr":1,"upload.send_upload_stat":1,"push_notifier":1,"audio_artist_new_catalog":1,"story_reactions_web":1,"notify_new_events_box":1,"web_ajax_json_object":1,"mini_apps_web_add_to_favorites":1,"cookie_class_samesite":1,"cookie_secure_default_true":1,"mvk_skeleton_animation":1,"mvk_new_info_snackbar":1,"stickers_bot_link":1,"market_with_products_of_groups":1,"stickers_money_transfer_suggestions":1},
+};
+var StaticFiles = {
+  'lite.js'   : {v: 270430074}
+};
+</script>
+<script type="text/javascript" language="javascript" src="/js/al/lite.js?270430074"></script><link rel="stylesheet" type="text/css" href="/css/al/common.css?82414755990" /><link rel="stylesheet" type="text/css" href="/css/al/base.css?1" /><link rel="stylesheet" type="text/css" href="/css/al/fonts_utf.css?1" /><link rel="stylesheet" type="text/css" href="/css/al/fonts_cnt.css?2660709036" /><meta name="robots" content="noindex,nofollow" /><title>ответы сп.docx</title>
+<style>
+html, body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  border: none;
+}
+.iframe {
+  border: none;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.docs_name {
+  display: block;
+  padding-top: 7px;
+}
+.docs_info {
+  padding: 7px 10px 0px;
+  color: #939699;
+}
+.docs_panel_wrap {
+  height: 50px;
+}
+.docs_panel {
+  background: #F1F1F1;
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+.docs_panel .docs_del_wrap {
+  margin: 0 5px;
+}
+.can_zoom {
+  max-width: 100%;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: -zoom-in;
+}
+.docs_panel .fl_r + .fl_r {
+    margin-right: 10px;
+}
+.can_zoom_out {
+  min-width: 100%;
+  cursor: -webkit-zoom-out;
+  cursor: -moz-zoom-out;
+  cursor: -zoom-out;
+}
+</style>
+<script>
+window.opener = null;
+function saveDoc() {
+  var src = 'https://vk.com/docs?act=doc_preview_link&user_id=147304573&time=1577442631&oid=207476609&did=529695725&hash=75a2578304e13a593b';
+  if (src.match(/\?/)) {
+    src += '&dl=1';
+  } else {
+    src += '?dl=1';
+  }
+  location.replace(src);
+  return false;
+}
+
+function saveLitresDoc() {
+  var anchor = document.createElement('a');
+  anchor.href = 'https://vk.com/docs?act=doc_preview_link&user_id=147304573&time=1577442631&oid=207476609&did=529695725&hash=75a2578304e13a593b';
+  anchor.target = '_blank';
+  anchor.download = 'book.pdf';
+
+  var clickEvent = new MouseEvent("click", {
+    "view": window,
+    "bubbles": true,
+    "cancelable": false
+  });
+  anchor.dispatchEvent(clickEvent);
+}
+function litresBuy() {
+    var src= '/doclinks.php?link=&hash=c29555746f65cfaa6d3d6d8b142a4905&act=buy_from_preview_page&platform=web2';
+    if (src) {
+        window.location = src;
+    }
+    return false;
+}
+function imgZoom(obj) {
+  if (obj.className == 'can_zoom') {
+    obj.className = 'can_zoom_out';
+  } else {
+    obj.className = 'can_zoom';
+    window.scroll(0, 0);
+  }
+}
+</script>
+</head>
+<body onkeydown="if (event.keyCode == 83 && (event.ctrlKey || event.metaKey)) return saveDoc(event);">
+<noindex>
+<div id="system_msg" class="fixed"></div>
+<div id="utils"></div>
+<div id="box_layer_bg" class="fixed"></div><div id="box_layer_wrap" class="scroll_fix_wrap fixed"><div id="box_layer"><div id="box_loader"><div class="loader"></div><div class="back"></div></div></div></div>
+<div id="stl_left"></div><div id="stl_side"></div>
+</div>
+<script type="text/javascript">domStarted();</script><div class="docs_panel_wrap">
+  <div class="docs_panel">
+    <div class="clear_fix" style="padding: 10px 20px;">
+      <button class="flat_button fl_r" onclick="return saveDoc();">Скачать документ</button><a href="https://www.microsoft.com/ru-ru/store/d/product/CFQ7TTC0K5DM/007R?WT.mc_id=VK_Office_Online_Integration" target="_blank" onclick="statlogsValueEvent('docs_office365_away', 'button');" class="flat_button secondary_dark fl_r" id="office_365_btn">Продукты Office 365</a>
+      <div class="docs_info fl_r"></div>
+      <a class="docs_name fl_l" onclick="return saveDoc();"><b>ответы сп.docx</b></a>&nbsp;
+    </div>
+  </div>
+</div><iframe id="iframe" class="iframe" src="https://ms.vkuserdocs.net/vk_gettoken?file_name=%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B+%D1%81%D0%BF.docx&file_url=https%3A%2F%2Fvk.com%2Fdocs%3Fact%3Ddoc_preview_link%26user_id%3D147304573%26time%3D1577442631%26oid%3D207476609%26did%3D529695725%26hash%3D75a2578304e13a593b&sig_client=vk_view&sig_timestamp=1577442631&ttl=3600&user_id=147304573&signature=572be61a8cc06acef9fbbb1a0dcfeb65" name="iframe1577442631" width="100%" height="100%"></iframe><script type="text/javascript">domReady();</script>
+</noindex>
+</body>
+</html>

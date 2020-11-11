@@ -1,0 +1,64 @@
+Модуль os позволяет взаимодействовать с операционной системой - узнавать/менять файловую структуру, переменные среды, узнавать имя и права пользователя и др. Программа, использующая переменные и функции модуля os, переносима с одной операционной системы на другую, так как os умеет учитывать особенности каждой ОС. Однако ряд функций используется только для Unix-подобных ОС.
+
+Следует отметить, что часть функциональности модуля os реализуют другие модули и встроенные функции Python. В этом случае нередко лучше выбирать их. Например, функция os.access() проверяет наличие доступа к файлу. Если файл открывается на чтение или запись, проще использовать функцию open(), а в случае запрета на доступ обработать возникшее исключение PermissionError.
+
+Ниже в качестве примера приводятся некоторые методы модуля os для работы с файловой системой.
+
+Узнать текущий каталог:
+
+>>> os.getcwd()
+'/home/pl/Documents/python'
+Создать каталог:
+
+>>> os.mkdir('TEXT')
+Создать дерево каталогов:
+
+>>> os.makedirs('ONE/TWO/THREE')
+>>> os.listdir('ONE')
+['TWO']
+>>> os.listdir('ONE/TWO')
+['THREE']
+Список содержимого каталога (нерекурсивный):
+
+>>> os.listdir()
+['text4.txt', 'text1.txt', 'text3.txt', 'try_except.py', 'files.py', 'text5.txt', 'grades_oop.py', 'grades.py', 'text6.txt', 'text2.txt', 'text.txt', 'TEXT']
+>>> os.listdir('/home')
+['pl']
+Сведения о файле|каталоге:
+
+>>> os.stat('/home')
+posix.stat_result(st_mode=16877, st_ino=1048577, st_dev=2053, st_nlink=3, st_uid=0, st_gid=0, st_size=4096, st_atime=1344368518, st_mtime=1339316982, st_ctime=1339316982)
+>>> os.stat('text.txt')
+posix.stat_result(st_mode=33188, st_ino=1575740, st_dev=2053, st_nlink=1, st_uid=1000, st_gid=1000, st_size=41, st_atime=1344124896, st_mtime=1343895362, st_ctime=1343895362)
+Переименовать файл|каталог:
+
+>>> os.rename('text2.txt', 'xett.txt')
+>>> os.rename('TEXT', 'ETXT')
+Удаление каталога:
+
+>>> os.rmdir('ETXT')
+Смена текущего каталога:
+
+>>> os.chdir('/home')
+>>> os.getcwd()
+'/home'
+>>> os.chdir('./pl/Documents/python')
+>>> os.getcwd()
+'/home/pl/Documents/python'
+Модуль os следует предпочесть при работе с индивидуальными файлами, для работы с группой файлов больше подходит модуль shutil, который позволяет выполнять операции над деревьями данных.
+
+Скопировать дерево:
+
+>>> shutil.copytree('../python', '../copy-python')
+>>> os.listdir('../copy-python')
+['text4.txt', 'text1.txt', 'text3.txt', 'try_except.py', 'ONE', 'files.py', 'xett.txt', 'text5.txt', 'grades_oop.py', 'grades.py', 'text6.txt', 'text.txt']
+Перемещение|переименование дерева:
+
+>>> shutil.move('../copy-python', 'python-copy')
+>>> os.listdir()
+['text4.txt', 'text1.txt', 'text3.txt', 'try_except.py', 'ONE', 'files.py', 'xett.txt', 'text5.txt', 'grades_oop.py', 'python-copy', 'grades.py', 'text6.txt', 'text.txt']
+Удаление дерева:
+
+>>> shutil.rmtree('python-copy')
+>>> os.listdir()
+['text4.txt', 'text1.txt', 'text3.txt', 'try_except.py', 'ONE', 'files.py', 'xett.txt', 'text5.txt', 'grades_oop.py', 'grades.py', 'text6.txt', 'text.txt']
