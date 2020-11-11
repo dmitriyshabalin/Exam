@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<content>
+<text question = "В каком году началась ВОВ?" answers = "В 1941**?**В 2019**?**В 1939" correct = "В 1941"> Варианты: </text>
+<text question = " Кто выиграл The International 2017 году?" answers = "Team Liquid**?**Virtus Pro**?**LGD Gaming" correct = "Team Liquid"> Варианты: </text>
+<text question = "Какой договор был подписан между людьми и высокими эльфами в Великой войне?" answers = "Морангтонскре соглашение**?**Канкордат белого золота**?**Сигильский договор" correct = "Канкордат белого золота"> Варианты: </text>
+<text question = "Здравствуйте, я из компании..." answers = "Old Space**?**AVON**?**Oriflame" correct = "Oriflame"> Варианты: </text>
+<text question = "Как дела?" answers = "Норм**?**Хорошо**?**Отлично" correct = "Отлично"> Варианты: </text>
+<text question = "Деревня какого народа обосновалась на Солстхейме?" answers = "Скаалы**?**Риклинги**?**Кракозябры" correct = "Скаалы"> Варианты: </text>
+<text question = "2+2*2?" answers = "8**?**6**?**18" correct = "6"> Варианты: </text>
+<text question = "Имя слуги Виктории?" answers = "Константин**?**Абдул**?**Инокентий" correct = "Абдул"> Варианты: </text>
+<text question = "Как зовут нового героя в Dota 2?" answers = "Iodreed**?**Nova**?**Void Spirit" correct = "Void Spirit"> Варианты: </text>
+<text question = "Кто убил Короля Ночи?" answers = "Джон**?**Арья**?**Дейнерис" correct = "Арья"> Варианты: </text>
+</content>
