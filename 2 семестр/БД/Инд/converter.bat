@@ -1,0 +1,1 @@
+pyuic5 Pac.py -o Pac.ui

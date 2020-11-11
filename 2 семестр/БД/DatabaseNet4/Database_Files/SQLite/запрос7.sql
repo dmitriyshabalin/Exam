@@ -1,0 +1,1 @@
+﻿select наименование, стоимость from Услуги group by стоимость order by стоимость asc limit 1;

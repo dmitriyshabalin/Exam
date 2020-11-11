@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DatabaseNET>
+  <License LicenseCode="" />
+  <Settings ResultsFont="Segoe UI" ResultsFontSize="9" DefaultFont="Segoe UI" DefaultFontSize="9" Language="russian.xml" CheckDate="6" CodeDir="Database_Files" ExecCount="1" LastAccessed="21" Maximize="True" pnlControlLeftWidth="442" ToolStrip1Left="3" ToolStrip1Top="0" ToolStrip2Left="283" ToolStrip2Top="0" ToolStrip3Left="854" ToolStrip3Top="0" ToolStrip4Left="1029" ToolStrip4Top="0" CheckedVersion="30.1.7400.1">
+    <Additional2FB DatabaseEngine="Default">
+    </Additional2FB>
+    <Additional2OLEDB>
+    </Additional2OLEDB>
+    <Additional2SQLCE>
+    </Additional2SQLCE>
+    <Additional2SQLITE>
+    </Additional2SQLITE>
+    <Additional2VISTADB>
+    </Additional2VISTADB>
+  </Settings>
+  <mru type="SQLite" value="D:\Я\Учеба\Phyton\Прикладное программирование\2 семестр\БД\Инд\IND.db" v="2" l="0" z="TABLES (1)\Pac|1|" e="" a="0" d="29.04.2020" b="">
+  </mru>
+  <mru type="SQLite" value="D:\Я\Учеба\Phyton\Прикладное программирование\2 семестр\БД\Инд\Diller.db" v="2" l="0" z="TABLES (6)\Ценность|1|" e="" a="0" d="29.05.2020" b="">
+  </mru>
+  <mru type="SQLite" value="C:\Users\NS\Downloads\Ch.db" v="2" l="0" z="TABLES (0)|0|" e="" a="0" d="22.06.2020" b="">
+  </mru>
+  <mru type="SQLite" value="C:\Users\NS\Downloads\1.db" v="2" l="0" z="TABLES (0)|0|" e="" a="0" d="22.06.2020" b="">
+  </mru>
+  <mru type="SQLite" value="C:\Users\NS\Downloads\examen.db" v="2" l="0" e="" a="0" d="22.06.2020" b="" z="TABLES (2)\Читатели|1|">
+  </mru>
+  <mru type="SQLite" value="D:\I am\School\ИОТЭАП\BD.db" v="2" l="0" e="" a="0" d="08.09.2020" b="" z="TABLES (0)|0|">
+  </mru>
+  <ConnectionProfileList2>
+    <item name="localhost" selected="0" DBType="MySQL" v="2" remember="False" runas="False">
+      <UseTrusted>False</UseTrusted>
+      <UserName>root</UserName>
+      <Password>
+      </Password>
+      <ServerName>localhost</ServerName>
+      <Database>
+      </Database>
+      <Port>3306</Port>
+      <ConnectionString>XLZXTRqpF7VEmRxFk30aHDtKUHae3LHY2BwvHeT4SOxD6aF/ZXz7xzYmjgImTPb42YZmf+0kAwzDWbdcz5hv6QdvXpgLSrWWcYj/tk8IqB1954imA4ScyjUrf3ypsio+zvfoLPlCZBmEmxIhynLS0aGmicYIDEU+LLi2BxXB8riA/SoRq54eUMIKUDrvhDs/xXg8rpehFnvGQyiQiJyoLWmswCKlNsACy9eiT30DH5/bpa4jnRaWRTrSyjytKXi13GQ4Iu2E6cKzE8KEdkMMwUyy8DCSYFnD4N/SRkuHLe79t2zXzp90CKlyFIefIhQXjZkqv7RKC/0UnWCqyVNezbrJ3xfcUySvIpPEQtzNhyotXhzpS3ZpcPXF3YgwcVEk</ConnectionString>
+      <F_Tables Type="1">
+      </F_Tables>
+      <F_Views Type="1">
+      </F_Views>
+      <F_Procs Type="1">
+      </F_Procs>
+      <F_Funcs Type="1">
+      </F_Funcs>
+      <F_Seqs Type="1">
+      </F_Seqs>
+      <F_Packages Type="1">
+      </F_Packages>
+      <F_Macros Type="1">
+      </F_Macros>
+      <Scripts>
+      </Scripts>
+      <Schemas>
+      </Schemas>
+    </item>
+  </ConnectionProfileList2>
+  <mru type="SQLite" value="D:\I am\School\Phyton\Прикладное программирование\2 семестр\БД\Инд\IND.db" v="2" l="0" e="" a="0" d="18.09.2020" b="" z="TABLES (1)\Pac|1|">
+  </mru>
+  <mru type="SQLite" value="D:\I am\School\БД\Практика 11\registr.db" v="2" l="0" z="TABLES (4)\Клиенты|1|" e="" a="0" d="19.09.2020" b="">
+  </mru>
+  <mruf value="D:\I am\School\Phyton\Прикладное программирование\2 семестр\БД\DatabaseNet4\Database_Files\SQLite\запрос1.sql" r="SQLite/запрос1.sql" />
+  <mruf value="C:\Users\NS\Downloads\examen.db" />
+  <mruf value="C:\Users\NS\Downloads\sqlite-tools-win32-x86-3310100\sqlite-tools-win32-x86-3310100\Diller.db" />
+  <mruf value="C:\Users\NS\Downloads\sqlite_bd.db" />
+</DatabaseNET>
